@@ -1,18 +1,25 @@
-## Getting Started
+# Projet Java MVC avec Connexion Base de Données
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Ce projet illustre une architecture **MVC (Modèle - Vue - Contrôleur)** en Java avec préparation de la connexion à une base de données (JDBC / MySQL).
 
-## Folder Structure
+## Structure du Projet
 
-The workspace contains two folders by default, where:
+- `src/config/DatabaseConnection.java` : Gestionnaire de connexion Singleton à la BD.
+- `src/model/Etudiant.java` : Classe modèle (Entity).
+- `src/dao/EtudiantDAO.java` : Objet d'accès aux données (DAO / SQL).
+- `src/view/EtudiantView.java` : Interface utilisateur (Console).
+- `src/controller/EtudiantController.java` : Contrôleur faisant le lien entre Modèle/DAO et Vue.
+- `src/App.java` : Point d'entrée de l'application.
+- `SCHEMA.md` : Document détaillant le schéma d'architecture MVC, le diagramme UML et le script SQL.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Compilation et Exécution
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Compiler le projet :
+```bash
+javac -d bin -sourcepath src src/App.java src/config/*.java src/model/*.java src/dao/*.java src/view/*.java src/controller/*.java
+```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Exécuter le projet :
+```bash
+java -cp bin App
+```
