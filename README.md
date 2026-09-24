@@ -11,6 +11,7 @@ Ce projet illustre une architecture **MVC (Modèle - Vue - Contrôleur)** en Jav
 - `src/controller/EtudiantController.java` : Contrôleur faisant le lien entre Modèle/DAO et Vue.
 - `src/App.java` : Point d'entrée de l'application.
 - `SCHEMA.md` : Document détaillant le schéma d'architecture MVC, le diagramme UML et le script SQL.
+- `ORGANISATION.md` : Guide d'organisation du travail en équipe (découpage à 2 et stratégie Git anti-conflits).
 
 ## Compilation et Exécution
 
