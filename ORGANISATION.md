@@ -22,10 +22,10 @@ Responsable de la gestion des identités, des étudiants et des formateurs.
   * `Utilisateur.java` (Classe abstraite / mère)
   * `Etudiant.java`
   * `Formateur.java`
-* **Accès aux données (`src/dao/`)** :
-  * `UtilisateurDAO.java`
-  * `EtudiantDAO.java`
-  * `FormateurDAO.java`
+* **Accès aux données (`src/dao/` ou `src/repository/`)** :
+  * `UtilisateurRepository.java` (ou `UtilisateurDAO.java`)
+  * `EtudiantRepository.java` (ou `EtudiantDAO.java`)
+  * `FormateurRepository.java` (ou `FormateurDAO.java`)
 * **Contrôleurs (`src/controller/`)** :
   * `UserController.java`
   * `EtudiantController.java`
@@ -43,8 +43,9 @@ Responsable de la gestion académique, des cours et des inscriptions.
 * **Modèles (`src/model/`)** :
   * `Formation.java`
   * `Inscription.java`
-* **Accès aux données (`src/dao/`)** :
-  * `FormationDAO.java`
+* **Accès aux données (`src/dao/` ou `src/repository/`)** :
+  * `FormationRepository.java` (ou `FormationDAO.java`)
+  * `InscriptionRepository.java` (ou `InscriptionDAO.java`)
   * `InscriptionDAO.java`
 * **Contrôleurs (`src/controller/`)** :
   * `FormationController.java`
